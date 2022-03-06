@@ -100,7 +100,7 @@ section{
 /*=========================Nav Menu========================*/
   .nav
   {
-     height: calc(var(--header-height) + 1rem);
+      height: calc(var(--header-height) + 1rem);
       width: 100%;
       background: var(--main-color);
       display: flex;
@@ -111,15 +111,14 @@ section{
       top: 0;
       left: 0;
       z-index: var(--z-fixed);
+      border: 1px solid red;
   }
 
-  .nav__logo
-  {
-      display: inline-block;
-      
-      font-size: var(--para-font);
-      /* column-gap: .5rem; */
-      color: var(--primary-color);
+
+.nav__logo{
+  font-size: var(--para-font);
+  /* column-gap: .5rem; */
+  color: var(--primary-color);
 }
 
   a svg{
@@ -388,7 +387,8 @@ section{
   .nav{
     height: calc(var(--header-height));
     display: flex;
-    column-gap: 7rem;
+    justify-content: space-between;
+    padding: 1rem;
   }
 
   .nav__list{
@@ -396,10 +396,12 @@ section{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: 3rem;
     height: 100%;
     width: 100%;
-    
+  }
+
+  .nav__item{
+    margin: 1.5rem;
   }
 
   .nav__menu
@@ -973,7 +975,6 @@ section .skill{
   font-size: var(--h3-font);
   font-weight: 500;
   color: var(--para-lightest);
-  color: red;
 }
 
 .contact-information a{
