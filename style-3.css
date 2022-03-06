@@ -973,8 +973,7 @@ section .skill{
   font-size: var(--h3-font);
   font-weight: 500;
   color: var(--para-lightest);
-  
-  
+  color: red;
 }
 
 .contact-information a{
