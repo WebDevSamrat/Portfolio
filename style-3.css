@@ -460,7 +460,7 @@ section .skill{
 }
 
 .set span{
-  display: block;
+ 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -471,7 +471,7 @@ section .skill{
   color: var(--primary-color);
   border-radius: var(--radius);
   margin-inline: auto;
-  border: 1px solid red;
+  
 }
 
 .icon{
@@ -481,19 +481,15 @@ section .skill{
   width: 80px;
   height: 80px;
   font-size: 48px;
-  
   color: var(--primary-color);
   border-radius: var(--radius);
-  margin-inline: auto;
-  
+   border: 1px solid red;
+   margin: 0 auto;
 }
 
 .skill .set:nth-child(2) span{
   font-size: 60px;
 }
-
-
-
 
 
 .set > header{
