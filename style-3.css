@@ -437,10 +437,8 @@ section .skill{
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  
   padding: 16px;
   max-width: 1024px;
-  
   margin-inline: auto;
 }
 
@@ -462,6 +460,7 @@ section .skill{
 }
 
 .set span{
+  display: block;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -469,6 +468,20 @@ section .skill{
   height: 80px;
   font-size: 48px;
   /* background-color: var(--primary-color); */
+  color: var(--primary-color);
+  border-radius: var(--radius);
+  margin-inline: auto;
+  border: 1px solid red;
+}
+
+.icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  font-size: 48px;
+  
   color: var(--primary-color);
   border-radius: var(--radius);
   margin-inline: auto;
