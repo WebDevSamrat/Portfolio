@@ -327,7 +327,7 @@ section{
 }
 
 .hero-img {
-  width: min(300px, 70vw);
+  width: min(300px, 65vw);
   position: relative;
 }
 
@@ -916,12 +916,11 @@ section .skill{
 }
 
 
-
-
 /*=========================Contact Section========================*/
 
 .contact{
   height: 100vh;
+  border: 1px solid red;
 }
 
 .contact header{
