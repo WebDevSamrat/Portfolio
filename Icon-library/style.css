@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?5maz58');
-  src:  url('fonts/icomoon.eot?5maz58#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?5maz58') format('truetype'),
-    url('fonts/icomoon.woff?5maz58') format('woff'),
-    url('fonts/icomoon.svg?5maz58#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?9ibeur');
+  src:  url('fonts/icomoon.eot?9ibeur#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?9ibeur') format('truetype'),
+    url('fonts/icomoon.woff?9ibeur') format('woff'),
+    url('fonts/icomoon.svg?9ibeur#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-Instagram:before {
+  content: "\e909";
+}
+.icon-Linkedin:before {
+  content: "\e90a";
+}
+.icon-Twitter:before {
+  content: "\e90b";
+}
 .icon-Minus:before {
   content: "\e913";
 }
@@ -57,15 +66,6 @@
 }
 .icon-React:before {
   content: "\e90c";
-}
-.icon-Twitter:before {
-  content: "\e909";
-}
-.icon-Instagram:before {
-  content: "\e90a";
-}
-.icon-Linkedin:before {
-  content: "\e90b";
 }
 .icon-Figma:before {
   content: "\e906";
