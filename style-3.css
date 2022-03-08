@@ -330,7 +330,7 @@ section{
 }
 
 .hero-img {
-  width: min(300px, 55vw);
+  width: min(300px, 50vw);
   position: relative;
   
   
