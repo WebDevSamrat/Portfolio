@@ -18,7 +18,7 @@
     --shadow: rgba(2,12,27,0.9);
 
   /*========== Font and typography ==========*/
-  --h1-font: clamp(30px, 35px, 7vw);
+  --h1-font: clamp(25px, 35px, 7vw);
   --h3-font: clamp(20px, 25px, 7vw);
   /* --para-font: min(25px, 4.5vw); */
   --para-font: clamp(18px, 20px, 4.5vw);
@@ -293,9 +293,12 @@ section{
 }
 
  .hero-content p{
-  font-size: var(--para-font);
-  color: var(--para-light);
+  /* font-size: var(--para-font); */
+  letter-spacing: 1px;
+  color: var(--para-color);
   margin: 15px 0;
+  line-height: 25px;
+  font-size: 16px;
  }
 
  .hero-content p:first-child{
@@ -327,8 +330,10 @@ section{
 }
 
 .hero-img {
-  width: min(300px, 60vw);
+  width: min(300px, 55vw);
   position: relative;
+  
+  
 }
 
 .hero-img img{
@@ -438,7 +443,7 @@ section .skill{
   width: 266px;
   height: 340px;
   background-color: var(--nav-color);
-  /* border: 1px solid var(--primary-color); */
+  
   padding: 24px;
   margin: 10px 0;
   border-radius: var(--radius);
