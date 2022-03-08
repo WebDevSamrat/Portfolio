@@ -293,9 +293,9 @@ section{
 }
 
  .hero-content p{
-  /* font-size: var(--para-font); */
+  font-size: var(--para-font);
   letter-spacing: 1px;
-  color: var(--para-color);
+  color: var(--para-light);
   margin: 15px 0;
   line-height: 25px;
   font-size: 16px;
@@ -313,7 +313,7 @@ section{
  }
 
 
- .hero-content a{
+ .hero-button{
   text-decoration: none;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
@@ -325,15 +325,29 @@ section{
   transition: all .5s ease;
 }
 
-.hero-content a:hover{
+.hero-button:hover{
   background: var(--hover-color)
 }
+
+.hero-icons{
+  margin: 1rem 0;
+}
+
+.hero-icons a{
+  text-decoration: none;
+  color: var(--para-light);
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.hero-icons a:hover{
+  color: var(--primary-color);
+}
+
 
 .hero-img {
   width: min(300px, 50vw);
   position: relative;
-  
-  
 }
 
 .hero-img img{
@@ -341,7 +355,7 @@ section{
   -o-object-fit: cover;
   object-fit: contain;
   border-radius: var(--radius);
-  position: relative;
+  /* position: relative; */
 }
 
 .hero-img::before{
@@ -349,27 +363,27 @@ section{
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 0.25rem solid var(--primary-color);
+  border: 0.20rem solid var(--primary-color);
   top: 1rem;
   right: -2rem;
   border-radius: var(--radius);
   transition: all .5s ease;
+  z-index: -1;
 }
 
 .hero-img-hover::before{
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border: 0.25rem solid var(--primary-color);
+ 
   top: .5rem;
   right: -1rem;
-  border-radius: var(--radius);
+  
 }
 
 /*=========================Nav Media queries========================*/
 
 @media(max-width: 988px){
+  .hero-img{
+    display: none;
+  }
   .hero-img::before{
      display: none;
   }
@@ -426,6 +440,94 @@ section{
      }
 
 }
+
+/*=========================About Section========================*/
+
+.about-container{
+  /* height: 80vh; */
+  width: 90vw;
+  margin: auto;
+  max-width: 1170px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.about-img{
+  width: min(300px, 60vw);
+  position: relative;
+}
+
+.about-img img{
+  width: 100%;
+  border-radius: var(--radius);
+}
+
+/* .about-img::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(100,255,218,0.3);
+  transition: .3s;
+}
+
+.about-img:hover::after{
+  background: none;
+  
+} */
+
+.about-img::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 0.20rem solid var(--secondary-color);
+  top: 1rem;
+  left: -2rem;
+  border-radius: var(--radius);
+  transition: all .5s ease;
+  z-index: -1;
+}
+
+.about-img:hover::before{
+  top: .5rem;
+  left: -1rem;
+}
+
+.about-detail{
+  width: 500px;
+  color: white;
+  padding: 1rem;
+}
+
+.about-detail header{
+  margin: 2rem 0;
+}
+
+.about-detail header h1{
+  color: var(--para-lightest);
+  font-size: var(--h3-font);
+}
+
+.about-detail header p{
+  color: var(--para-light);
+  font-size: var(--para-font);
+}
+
+.about-detail p{
+  color: var(--para-light);
+  line-height: 20px;
+  letter-spacing: 0.7px;
+  
+  
+}
+
+
+
 
 /*=========================Skill Section========================*/
 
@@ -552,7 +654,7 @@ section .skill{
 }
 
 .projects-content .project-detail{
-  background-color: #112240;
+  background-color: var(--nav-color);
   padding: 1rem;
   border-radius: var(--radius);
   color: var(--para-light);
