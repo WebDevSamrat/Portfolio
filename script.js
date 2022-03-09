@@ -131,3 +131,56 @@ window.addEventListener('load', () => {
         })
     })
 })
+
+
+/*===============STATS SECTION ===============*/
+
+
+const counters = document.querySelectorAll('.counter');
+const stats = document.querySelector('.stats');
+
+
+const countingCounters = function (entries, observer) {
+
+  entries.forEach(entry => {
+
+    if (entry.isIntersecting && entry.intersectionRatio >= 0.2) {
+
+
+      counters.forEach(counter => {
+
+        counter.innerText = '0';
+
+
+        const updateCounter = function () {
+
+
+          const target = +counter.getAttribute('data-target');
+            const c = +counter.innerText;
+            const increment = target / 2000;
+        
+            if (c < target) {
+              counter.innerText = `${Math.ceil(c + increment)}`;
+              setTimeout(updateCounter, 50);
+            } else {
+              counter.innerText = target;
+            }
+      }
+      updateCounter();
+      });
+      observer.unobserve(stats);
+  }
+  });
+};
+
+
+const options = {
+  root: null,
+  threshold: 0.2
+};
+
+
+const observer = new IntersectionObserver(countingCounters, options);
+
+
+observer.observe(stats);

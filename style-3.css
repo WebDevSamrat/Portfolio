@@ -69,7 +69,7 @@ html::-webkit-scrollbar-track{
 
 section{
   padding-top: 4.5rem;
- 
+  margin-top: 4rem;
 }
 
 .section-header{
@@ -544,7 +544,9 @@ section .skill{
 .skill .set{
   width: 266px;
   height: 340px;
-  background-color: var(--nav-color);
+  /* background-color: var(--nav-color); */
+  border: 1px solid var(--primary-color);
+  
   
   padding: 24px;
   margin: 10px 0;
@@ -552,6 +554,7 @@ section .skill{
   cursor: pointer;
   
 }
+
 
 
 .set span{
@@ -589,14 +592,11 @@ section .skill{
 
   display: flex;
   justify-content: space-between;
-  color: var(--para-color);
+  color: var(--para-light);
   text-transform: uppercase;
   margin: 1rem 0rem;
 }
 
-.set:hover .list{
-  color: var(--para-lightest)
-}
 
 
 
@@ -937,6 +937,68 @@ section .skill{
 .services-modal-header i:hover{
   color: var(--primary-color);
 }
+
+
+/*=========================Stats Section========================*/
+
+
+.stats header h1{
+  color: var(--para-lightest);
+  font-size: var(--h3-font);
+  text-align: center;
+}
+
+.stats-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.counter-container{
+  width: 200px;
+  height: 250px;
+  /* background-color: var(--nav-color); */
+  color: var(--para-lightest);
+  margin: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.counter-container:hover{
+  border: 1px solid var(--primary-color);
+}
+
+.counter-container p{
+  font-size: var(--para-font);
+  color: var(--para-light);
+}
+
+.counter-container i{
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+
+
+
+.counter-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter-box i{
+  color: var(--para-lightest);
+  font-size: 2.5rem;
+}
+
+.counter{
+  font-size: 2.5rem;
+}
+
 
 
 /*=========================Faq Section========================*/
