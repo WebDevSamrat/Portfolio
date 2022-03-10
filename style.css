@@ -727,7 +727,7 @@ section .skills-container{
 }
 
 
-.projects-content header h1{
+.projects-content-title h1{
   font-size: var(--h3-font);
   font-weight: 500;
   color: var(--para-lightest);
@@ -739,7 +739,7 @@ section .skills-container{
   color: var(--primary-color);
 }
 
-.projects-content header p{
+.projects-content-title p{
   
   color: var(--primary-color)
 }
