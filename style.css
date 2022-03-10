@@ -468,21 +468,7 @@ section{
   border-radius: var(--radius);
 }
 
-/* .about-img::after{
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(100,255,218,0.3);
-  transition: .3s;
-}
 
-.about-img:hover::after{
-  background: none;
-  
-} */
 
 .about-img::before{
   content: "";
@@ -512,9 +498,28 @@ section{
   margin: 2rem 0;
 }
 
+
 .about-detail header h1{
   color: var(--para-lightest);
   font-size: var(--h3-font);
+  overflow: hidden;
+}
+
+.about-detail header h1 span{
+  position: relative;
+  margin-left: 5px;
+}
+
+.about-detail header h1 span::after{
+  content: '';
+  display: block;
+  width: 200px;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  background-color: var(--primary-color);
 }
 
 .about-detail header p{
@@ -535,7 +540,49 @@ section{
 
 /*=========================Skill Section========================*/
 
-section .skill{
+.skills header{
+  padding: 0 1rem;
+}
+
+.skills header h1{
+  text-align: center;
+  max-width: 400px;
+  position: relative;
+  color: var(--para-lightest);
+  margin: auto;
+  
+}
+
+.skills header h1::before{
+  content: '';
+  display: block;
+  width: 200px;
+  height: 1px;
+  background-color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: -2;
+}
+
+.skills header h1::after{
+  content: '';
+  display: block;
+  width: 200px;
+  height: 1px;
+  background-color: var(--primary-color);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: -2;
+}
+
+.skills header h1 span{
+  background-color: var(--main-color);
+  padding: 0 5px;
+}
+
+section .skills-container{
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -545,7 +592,7 @@ section .skill{
   margin-inline: auto;
 }
 
-.skill .set{
+.skills-container .set{
   width: 266px;
   height: 340px;
   /* background-color: var(--nav-color); */
@@ -577,7 +624,7 @@ section .skill{
 }
 
 
-.skill .set:nth-child(2) span{
+.skills-container .set:nth-child(2) span{
   font-size: 60px;
 }
 
@@ -602,9 +649,49 @@ section .skill{
 }
 
 
-
-
 /*=========================Projects Section========================*/
+
+.projects header{
+  padding: 0 1rem;
+}
+
+.projects header h1{
+  text-align: center;
+  max-width: 400px;
+  position: relative;
+  color: var(--para-lightest);
+  margin: auto;
+  
+}
+
+.projects header h1::before{
+  content: '';
+  display: block;
+  width: 200px;
+  height: 1px;
+  background-color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: -2;
+}
+
+.projects header h1::after{
+  content: '';
+  display: block;
+  width: 200px;
+  height: 1px;
+  background-color: var(--primary-color);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: -2;
+}
+
+.projects header h1 span{
+  background-color: var(--main-color);
+  padding: 0 5px;
+}
 
 .projects-container{
   width: min(850px, 90vw);
@@ -789,6 +876,47 @@ section .skill{
 
 /*=========================Services Section========================*/
 
+.services header{
+  padding: 0 1rem;
+}
+
+.services header h1{
+  text-align: center;
+  max-width: 400px;
+  position: relative;
+  color: var(--para-lightest);
+  margin: auto;
+  
+}
+
+.services header h1::before{
+  content: '';
+  display: block;
+  width: 200px;
+  height: 1px;
+  background-color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: -2;
+}
+
+.services header h1::after{
+  content: '';
+  display: block;
+  width: 200px;
+  height: 1px;
+  background-color: var(--primary-color);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: -2;
+}
+
+.services header h1 span{
+  background-color: var(--main-color);
+  padding: 0 5px;
+}
 
 .services-container{
   max-width: 800px;
@@ -945,12 +1073,48 @@ section .skill{
 
 /*=========================Stats Section========================*/
 
+.stats header{
+  padding: 0 1rem;
+}
 
 .stats header h1{
-  color: var(--para-lightest);
-  font-size: var(--h3-font);
   text-align: center;
+  max-width: 400px;
+  position: relative;
+  color: var(--para-lightest);
+  margin: auto;
+  
 }
+
+.stats header h1::before{
+  content: '';
+  display: block;
+  width: 200px;
+  height: 1px;
+  background-color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: -2;
+}
+
+.stats header h1::after{
+  content: '';
+  display: block;
+  width: 200px;
+  height: 1px;
+  background-color: var(--primary-color);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: -2;
+}
+
+.stats header h1 span{
+  background-color: var(--main-color);
+  padding: 0 5px;
+}
+
 
 .stats-container{
   display: flex;
@@ -1010,7 +1174,50 @@ section .skill{
 .testimonials header{
   text-align: center;
   margin-bottom: 2rem;
+  
 }
+
+
+.testimonials header h1{
+  text-align: center;
+  max-width: 400px;
+  position: relative;
+  color: var(--para-lightest);
+  margin: auto;
+  
+}
+
+.testimonials header h1::before{
+  content: '';
+  display: block;
+  width: 200px;
+  height: 1px;
+  background-color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: -2;
+}
+
+.testimonials header h1::after{
+  content: '';
+  display: block;
+  width: 200px;
+  height: 1px;
+  background-color: var(--primary-color);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: -2;
+}
+
+.testimonials header h1 span{
+  background-color: var(--main-color);
+  padding: 0 5px;
+}
+
+
+
 
 .testimonials header h1{
 	color: var(--para-lightest);
@@ -1031,7 +1238,13 @@ section .skill{
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding:30px;
+  padding: 1rem;
+}
+
+@media(max-width: 360px){
+  .testimonials .slider{
+    height: 400px;
+  }
 }
 
 .testimonials .slider .slide{
@@ -1098,11 +1311,54 @@ section .skill{
 
 
 /*=========================Faq Section========================*/
+
+.faq header{
+  padding: 0 1rem;
+}
+
+.faq header h1{
+  text-align: center;
+  max-width: 350px;
+  position: relative;
+  color: var(--para-lightest);
+  margin: auto;
+}
+
+.faq header h1::before{
+  content: '';
+  display: block;
+  width: 200px;
+  height: 1px;
+  background-color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: -2;
+}
+
+.faq header h1::after{
+  content: '';
+  display: block;
+  width: 200px;
+  height: 1px;
+  background-color: var(--primary-color);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: -2;
+}
+
+.faq header h1 span{
+  background-color: var(--main-color);
+  padding: 0 5px;
+}
+
+
+
 .faq-container {
   width: 680px;
   max-width: 100%;
   margin: 2rem auto;
-  
 }
 
 .accordion-item{
@@ -1188,13 +1444,52 @@ section .skill{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  
 }
 
 .contact header{
   max-width: 600px;
   margin: 0 auto;
   padding: 0 1rem;
+  
+}
+
+.contact header h1{
+  text-align: center;
+  max-width: 600px;
+  position: relative;
+  color: var(--para-lightest);
+  margin: auto;
+  
+  
+}
+
+.contact header h1::before{
+  content: '';
+  display: block;
+  width: 200px;
+  height: 1px;
+  background-color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: -2;
+}
+
+.contact header h1::after{
+  content: '';
+  display: block;
+  width: 200px;
+  height: 1px;
+  background-color: var(--primary-color);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: -2;
+}
+
+.contact header h1 span{
+  background-color: var(--main-color);
+  padding: 0 5px;
 }
 
 
@@ -1287,7 +1582,6 @@ section .skill{
 
 
 .footer p{
-  font-family: sans-serif;
   text-align: center;
   font-size: clamp(14px, 15px, 4vw);
   max-width: 500px;
@@ -1302,7 +1596,7 @@ section .skill{
   content: '';
   display: block;
   width: 120px;
-  height: 2px;
+  height: 1px;
   background-color: var(--para-color);
   position: absolute;
   left: 0;
@@ -1315,7 +1609,7 @@ section .skill{
   content: '';
   display: block;
   width: 120px;
-  height: 2px;
+  height: 1px;
   background-color: var(--para-color);
   position: absolute;
   right: 0;
