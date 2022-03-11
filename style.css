@@ -1273,11 +1273,18 @@ section .skills-container{
 	word-spacing: 2px;
 }
 
-.testimonials .slider .client-info h3{
+.testimonials .slider .client-info a{
 	font-weight: bold;
 	color: var(--para-lightest);
 	font-size:18px;
+  display: block;
 	margin:30px 0 10px;
+  text-decoration: underline;
+  
+}
+
+.testimonials .slider .client-info a:hover{
+  color: var(--primary-color);
 }
 
 .testimonials .slider .client-info span{
